@@ -5,4 +5,3 @@ class User < ApplicationRecord
 
   has_many :shouts, dependent: :destroy
 end
-  
