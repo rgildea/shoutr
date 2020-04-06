@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   root to: "homes#show", as: nil
 
+  resource :search, only: [:show]
+
   post "text_shouts" => "shouts#create", defaults: { content_type: TextShout }
   post "photo_shouts" => "shouts#create", defaults: { content_type: PhotoShout }
 
