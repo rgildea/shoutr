@@ -65,6 +65,7 @@
         <filter class="solr.StandardFilterFactory"/>
         <filter class="solr.LowerCaseFilterFactory"/>
         <filter class="solr.PorterStemFilterFactory"/>
+	<filter class="solr.WordDelimiterFilterFactory" generateWordParts="1" splitOnNumerics="0" />
       </analyzer>
     </fieldType>
     <!-- *** This fieldType is used by Sunspot! *** -->
