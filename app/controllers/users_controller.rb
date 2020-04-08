@@ -1,4 +1,9 @@
 class UsersController < Clearance::UsersController
+  def initialize
+    @user = nil
+    super
+  end
+
   def new
     @user = User.new
   end

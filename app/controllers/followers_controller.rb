@@ -1,5 +1,10 @@
 class FollowersController < ApplicationController
-  def index 
+def initialize
+  @user = nil
+  super
+end
+
+def index 
     @user = find_user
     @followers = @user.followers
   end
